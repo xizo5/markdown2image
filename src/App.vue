@@ -356,11 +356,11 @@ html, body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  height: 100%;
+  /* height: 100%; */
 }
 
 body, #app {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 100%;
 }
 
@@ -388,10 +388,8 @@ body, #app {
 
 .editor-container {
   display: flex;
+  gap: 30px;
   flex-direction: row;
-  gap: 2rem;
-  margin-bottom: 2rem;
-  flex: 1;
 }
 
 @media (max-width: 768px) {
@@ -404,6 +402,7 @@ body, #app {
   flex: 1;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .editor-panel h2, .preview-panel h2 {
@@ -429,7 +428,7 @@ body, #app {
 }
 
 .markdown-editor {
-  width: 100%;
+  /* width: 100%; */
   flex: 1;
   padding: 1rem;
   border: 1px solid #ddd;
@@ -438,11 +437,9 @@ body, #app {
   resize: vertical;
   font-size: 14px;
   line-height: 1.5;
-  min-height: 300px;
 }
 
 .container.fullscreen .markdown-editor {
-  min-height: 70vh;
 }
 
 .markdown-preview {
@@ -454,11 +451,9 @@ body, #app {
   background-color: white;
   overflow-y: auto;
   box-sizing: border-box;
-  min-height: 300px;
 }
 
 .container.fullscreen .markdown-preview {
-  min-height: 70vh;
 }
 
 .export-controls {
@@ -466,7 +461,7 @@ body, #app {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   flex-wrap: wrap;
 }
 
